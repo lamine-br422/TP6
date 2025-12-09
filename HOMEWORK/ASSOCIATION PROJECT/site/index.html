@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang='fr'>
+<head>
+<meta charset='utf-8' />
+<title>Madrassa — Navigation</title>
+
+    <style>
+      :root{
+        --bg-main:#050816;
+        --bg-panel:#0b1220;
+        --bg-header:#020617;
+        --bg-table:#020617;
+        --border:#1e293b;
+        --accent:#38bdf8;
+        --accent-soft:#0f172a;
+        --text-main:#e5e7eb;
+        --text-muted:#9ca3af;
+        --danger:#f97373;
+        --success:#4ade80;
+      }
+      *{box-sizing:border-box;margin:0;padding:0;}
+      body{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background:var(--bg-main);
+        color:var(--text-main);
+      }
+      header{
+        background:var(--bg-header);
+        border-bottom:1px solid var(--border);
+        padding:12px 32px;
+      }
+      header h1{
+        font-size:22px;
+        font-weight:700;
+      }
+      .container{
+        max-width:1200px;
+        margin:24px auto 40px auto;
+        padding:0 20px 40px 20px;
+      }
+      .subtitle{
+        color:var(--text-muted);
+        margin-top:8px;
+        margin-bottom:24px;
+      }
+      .tabs-bar{
+        display:flex;
+        gap:8px;
+        padding:12px 32px;
+        background:var(--bg-header);
+        border-bottom:1px solid var(--border);
+        position:sticky;
+        top:0;
+        z-index:10;
+      }
+      .tab-btn{
+        padding:6px 16px;
+        border-radius:999px;
+        border:1px solid transparent;
+        background:transparent;
+        color:var(--text-muted);
+        font-size:14px;
+        cursor:pointer;
+        transition:all .15s ease;
+      }
+      .tab-btn:hover{
+        border-color:var(--accent);
+        color:var(--accent);
+        background:rgba(56,189,248,0.08);
+      }
+      .tab-btn.active{
+        background:var(--accent);
+        color:#0f172a;
+        border-color:var(--accent);
+        font-weight:600;
+      }
+      .tab-section{
+        display:none;
+        margin-top:24px;
+      }
+      .tab-section.active{
+        display:block;
+      }
+      h2{
+        font-size:22px;
+        font-weight:700;
+        margin-bottom:12px;
+      }
+      table{
+        width:100%;
+        border-collapse:collapse;
+        margin-top:12px;
+        background:var(--bg-table);
+        border-radius:12px;
+        overflow:hidden;
+        box-shadow:0 12px 30px rgba(15,23,42,0.8);
+      }
+      thead{
+        background:#020617;
+      }
+      th,td{
+        padding:10px 12px;
+        font-size:13px;
+        border-bottom:1px solid var(--border);
+        white-space:nowrap;
+      }
+      th{
+        text-align:left;
+        color:var(--text-muted);
+        font-weight:500;
+      }
+      tr:nth-child(even) td{
+        background:#020617;
+      }
+      tr:hover td{
+        background:#111827;
+      }
+      .badge{
+        display:inline-block;
+        font-size:11px;
+        padding:2px 10px;
+        border-radius:999px;
+        border:1px solid transparent;
+      }
+      .badge-paid{
+        color:#22c55e;
+        border-color:#22c55e33;
+        background:#16a34a1a;
+      }
+      .badge-pending{
+        color:#eab308;
+        border-color:#eab30833;
+        background:#854d0e33;
+      }
+      .badge-unpaid{
+        color:#f97373;
+        border-color:#f9737333;
+        background:#b91c1c33;
+      }
+      footer{
+        text-align:center;
+        color:var(--text-muted);
+        font-size:12px;
+        margin-top:32px;
+        border-top:1px solid var(--border);
+        padding-top:12px;
+      }
+      @media (max-width:900px){
+        th,td{font-size:11px;padding:8px;}
+        header, .tabs-bar{padding-inline:16px;}
+        .container{padding-inline:12px;}
+      }
+    </style>
+    
+<script>
+function showTab(name){
+  const sections=document.querySelectorAll('.tab-section');
+  sections.forEach(s=>s.classList.remove('active'));
+  const btns=document.querySelectorAll('.tab-btn');
+  btns.forEach(b=>b.classList.remove('active'));
+  document.getElementById('tab-'+name).classList.add('active');
+  document.getElementById('btn-'+name).classList.add('active');
+}
+document.addEventListener('DOMContentLoaded',()=>{showTab('students');});
+</script>
+</head>
+<body>
+<header>
+  <h1>Madrassa — Navigation</h1>
+</header>
+<div class='tabs-bar'>
+  <button id='btn-students'  class='tab-btn' onclick="showTab('students')">Students</button>
+  <button id='btn-teachers'  class='tab-btn' onclick="showTab('teachers')">Teachers</button>
+  <button id='btn-groups'    class='tab-btn' onclick="showTab('groups')">Groups</button>
+  <button id='btn-events'    class='tab-btn' onclick="showTab('events')">Events</button>
+  <button id='btn-donations' class='tab-btn' onclick="showTab('donations')">Donations</button>
+</div>
+<main class='container'>
+  <p class='subtitle'>Clique un onglet pour afficher la section correspondante (tables).</p>
+  <section id='tab-students' class='tab-section'>
+    <h2>Students</h2>
+    <table>
+      <thead><tr>
+        <th>#</th><th>Full Name</th><th>Email</th><th>Phone</th>
+        <th>Address</th><th>Join Date</th><th>Skills</th><th>Interests</th><th>Group</th><th>Subscription</th>
+      </tr></thead>
+      <tbody>
+<tr><td>1</td><td>Ali Ben</td><td>ali.ben@example.com</td><td>0551000001</td><td>Bouzaréah</td><td>2025-01-10</td><td>Hifz</td><td>Tajwid, Memorisation</td><td>1</td><td><span class='badge badge-paid'>Paid</span></td></tr>
+<tr><td>2</td><td>Yousra Benali</td><td>yousra.benali@example.com</td><td>0551000002</td><td>El Biar</td><td>2025-01-15</td><td>Makharij</td><td>Tafsir</td><td>1</td><td><span class='badge badge-pending'>Pending</span></td></tr>
+<tr><td>3</td><td>Mohamed Rahmani</td><td>mohamed.rahmani@example.com</td><td>0551000003</td><td>Bab Ezzouar</td><td>2025-02-01</td><td>Hifz, Tajwid</td><td>Memorisation</td><td>2</td><td><span class='badge badge-paid'>Paid</span></td></tr>
+<tr><td>4</td><td>Imane Kaci</td><td>imane.kaci@example.com</td><td>0551000004</td><td>Kouba</td><td>2025-02-10</td><td>Lecture</td><td>Hadith</td><td>2</td><td><span class='badge badge-pending'>Pending</span></td></tr>
+<tr><td>5</td><td>Samir Djabbar</td><td>samir.djabbar@example.com</td><td>0551000005</td><td>Hydra</td><td>2025-02-18</td><td>Hifz</td><td>Competition</td><td>3</td><td><span class='badge badge-paid'>Paid</span></td></tr>
+<tr><td>6</td><td>Karim Sid Ahmed</td><td>karim.sidahmed@example.com</td><td>0551000006</td><td>Blida</td><td>2025-03-01</td><td>Tajwid</td><td>Memorisation, Recitation</td><td>3</td><td><span class='badge badge-pending'>Pending</span></td></tr>
+<tr><td>7</td><td>Nadia Boukli</td><td>nadia.boukli@example.com</td><td>0551000007</td><td>Bouira</td><td>2025-03-05</td><td>Makharij</td><td>Tafsir, Hadith</td><td>4</td><td><span class='badge badge-paid'>Paid</span></td></tr>
+<tr><td>8</td><td>Amina Cherif</td><td>amina.cherif@example.com</td><td>0551000008</td><td>Tizi Ouzou</td><td>2025-03-12</td><td>Lecture</td><td>Arabic language</td><td>4</td><td><span class='badge badge-pending'>Pending</span></td></tr>
+<tr><td>9</td><td>Ismail Djabar</td><td>ismail.djabar@example.com</td><td>0551000009</td><td>Béjaïa</td><td>2025-03-20</td><td>Hifz</td><td>Competition, Recitation</td><td>5</td><td><span class='badge badge-paid'>Paid</span></td></tr>
+<tr><td>10</td><td>Soufiane Latreche</td><td>soufiane.latreche@example.com</td><td>0551000010</td><td>Constantine</td><td>2025-03-25</td><td>Tajwid</td><td>Memorisation</td><td>5</td><td><span class='badge badge-pending'>Pending</span></td></tr>
+<tr><td>11</td><td>Rania Mansour</td><td>rania.mansour@example.com</td><td>0551000011</td><td>Setif</td><td>2025-04-01</td><td>Makharij, Lecture</td><td>Hadith, Arabic language</td><td>6</td><td><span class='badge badge-paid'>Paid</span></td></tr>
+<tr><td>12</td><td>Yacine Zerari</td><td>yacine.zerari@example.com</td><td>0551000012</td><td>Alger Centre</td><td>2025-04-05</td><td>Hifz</td><td>Memorisation, Tafsir</td><td>6</td><td><span class='badge badge-pending'>Pending</span></td></tr>
+      </tbody>
+    </table>
+  </section>
+  <section id='tab-teachers' class='tab-section'>
+    <h2>Teachers</h2>
+    <table>
+      <thead><tr>
+        <th>#</th><th>Full Name</th><th>Email</th><th>Phone</th>
+        <th>Address</th><th>Join Date</th><th>Skills</th><th>Interests</th>
+      </tr></thead>
+      <tbody>
+<tr><td>1</td><td>Ustadh Omar</td><td>omar.teacher@example.com</td><td>0661000001</td><td>Algiers</td><td>2024-09-01</td><td>Tajwid, Tafsir</td><td>Coaching, Competitions</td></tr>
+<tr><td>2</td><td>Ustadh Ahmed</td><td>ahmed.teacher@example.com</td><td>0661000002</td><td>Blida</td><td>2024-09-10</td><td>Hifz, Hadith</td><td>Supervision</td></tr>
+<tr><td>3</td><td>Ustadha Aicha</td><td>aicha.teacher@example.com</td><td>0661000003</td><td>Bouira</td><td>2024-10-01</td><td>Makharij, Arabic language</td><td>Beginners groups</td></tr>
+<tr><td>4</td><td>Ustadha Leila</td><td>leila.teacher@example.com</td><td>0661000004</td><td>Oran</td><td>2024-10-15</td><td>Tajwid, Hifz</td><td>Women circles</td></tr>
+      </tbody>
+    </table>
+  </section>
+  <section id='tab-groups' class='tab-section'>
+    <h2>Groups</h2>
+    <table>
+      <thead><tr>
+        <th>Group</th><th>Teacher</th><th>Students</th>
+      </tr></thead>
+      <tbody>
+<tr><td>1</td><td>-</td><td>Ali Ben, Yousra Benali</td></tr>
+<tr><td>2</td><td>-</td><td>Mohamed Rahmani, Imane Kaci</td></tr>
+<tr><td>3</td><td>-</td><td>Samir Djabbar, Karim Sid Ahmed</td></tr>
+<tr><td>4</td><td>-</td><td>Nadia Boukli, Amina Cherif</td></tr>
+<tr><td>5</td><td>-</td><td>Ismail Djabar, Soufiane Latreche</td></tr>
+<tr><td>6</td><td>-</td><td>Rania Mansour, Yacine Zerari</td></tr>
+      </tbody>
+    </table>
+  </section>
+  <section id='tab-events' class='tab-section'>
+    <h2>Events</h2>
+    <table>
+      <thead><tr>
+        <th>Name</th><th>Description</th><th>Date</th><th>Organizers</th><th>Participants</th>
+      </tr></thead>
+      <tbody>
+<tr><td>Hifdh Circle</td><td>Weekly memorisation circle for Juz Amma.</td><td>2025-04-10</td><td>Ustadh Omar</td><td>Ali Ben, Yousra Benali, Mohamed Rahmani, Imane Kaci</td></tr>
+<tr><td>Tajwid Workshop</td><td>Intensive weekend workshop on Tajwid rules.</td><td>2025-04-20</td><td>Ustadh Ahmed, Ustadha Leila</td><td>Mohamed Rahmani, Samir Djabbar, Karim Sid Ahmed, Ismail Djabar, Soufiane Latreche</td></tr>
+<tr><td>Ramadan Competition</td><td>Quran recitation competition for all groups.</td><td>2025-03-25</td><td>Ustadh Omar, Ustadha Aicha</td><td>Ali Ben, Mohamed Rahmani, Samir Djabbar, Nadia Boukli, Ismail Djabar, Rania Mansour</td></tr>
+<tr><td>Parents Meeting</td><td>Meeting with parents to discuss progress of students.</td><td>2025-04-30</td><td>Ustadha Aicha, Ustadha Leila</td><td>Yousra Benali, Imane Kaci, Karim Sid Ahmed, Amina Cherif, Soufiane Latreche, Yacine Zerari</td></tr>
+      </tbody>
+    </table>
+  </section>
+  <section id='tab-donations' class='tab-section'>
+    <h2>Donations</h2>
+    <table>
+      <thead><tr>
+        <th>Date</th><th>Donor</th><th>Source</th><th>Amount</th><th>Purpose</th><th>Note</th>
+      </tr></thead>
+      <tbody>
+<tr><td>2025-01-05</td><td>Karim Rahmani</td><td>Student</td><td>5000.00</td><td>Zakat</td><td>Support for needy students</td></tr>
+<tr><td>2025-02-10</td><td>Local Association</td><td>External</td><td>12000.00</td><td>Library</td><td>Books and materials</td></tr>
+      </tbody>
+    </table>
+    <p>Total donations: <strong>17000.00</strong></p>
+  </section>
+</main>
+<footer>Madrassa — static HTML generated from JSON data.</footer>
+</body></html>
