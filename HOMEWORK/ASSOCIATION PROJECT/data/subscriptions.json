@@ -1,0 +1,106 @@
+[
+  {
+    "student_id": 1,
+    "amount": 2000,
+    "date": "2025-01-10",
+    "status": "paid",
+    "kind": "monthly",
+    "months": 1
+  },
+  {
+    "student_id": 2,
+    "amount": 1800,
+    "date": "2025-01-12",
+    "status": "unpaid",
+    "kind": "monthly",
+    "months": 1
+  },
+  {
+    "student_id": 3,
+    "amount": 15000,
+    "date": "2025-01-15",
+    "status": "paid",
+    "kind": "annual",
+    "year": 2025,
+    "discount_rate": 0.1
+  },
+  {
+    "student_id": 4,
+    "amount": 2000,
+    "date": "2025-02-10",
+    "status": "paid",
+    "kind": "monthly",
+    "months": 1
+  },
+  {
+    "student_id": 5,
+    "amount": 15000,
+    "date": "2025-02-18",
+    "status": "paid",
+    "kind": "annual",
+    "year": 2025
+  },
+  {
+    "student_id": 6,
+    "amount": 1800,
+    "date": "2025-03-01",
+    "status": "unpaid",
+    "kind": "monthly",
+    "months": 1
+  },
+  {
+    "student_id": 7,
+    "amount": 2200,
+    "date": "2025-03-05",
+    "status": "paid",
+    "kind": "monthly",
+    "months": 1
+  },
+  {
+    "student_id": 8,
+    "amount": 1800,
+    "date": "2025-03-12",
+    "status": "unpaid",
+    "kind": "monthly",
+    "months": 1
+  },
+  {
+    "student_id": 9,
+    "amount": 15000,
+    "date": "2025-03-20",
+    "status": "paid",
+    "kind": "annual",
+    "year": 2025
+  },
+  {
+    "student_id": 10,
+    "amount": 1800,
+    "date": "2025-03-25",
+    "status": "unpaid",
+    "kind": "monthly",
+    "months": 1
+  },
+  {
+    "student_id": 11,
+    "amount": 2000,
+    "date": "2025-04-01",
+    "status": "paid",
+    "kind": "monthly",
+    "months": 1
+  },
+  {
+    "student_id": 12,
+    "amount": 1800,
+    "date": "2025-04-05",
+    "status": "unpaid",
+    "kind": "monthly",
+    "months": 1
+  },
+  {
+    "student_id": 2,
+    "amount": 2000.0,
+    "date": "2025-11-28",
+    "status": "pending",
+    "kind": "base"
+  }
+]

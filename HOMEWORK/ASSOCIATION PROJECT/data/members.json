@@ -1,0 +1,399 @@
+[
+  {
+    "student_id": 1,
+    "full_name": "Ali Ben",
+    "email": "ali.ben@example.com",
+    "phone": "0551000001",
+    "address": "Bouzaréah",
+    "join_date": "2025-01-10",
+    "groupe": 2,
+    "subscription_status": "Paid",
+    "skills": [
+      "Hifz"
+    ],
+    "interests": [
+      "Tajwid",
+      "Memorisation"
+    ]
+  },
+  {
+    "student_id": 2,
+    "full_name": "Yousra Benali",
+    "email": "yousra.benali@example.com",
+    "phone": "0551000002",
+    "address": "El Biar",
+    "join_date": "2025-01-15",
+    "groupe": null,
+    "subscription_status": "Pending",
+    "skills": [
+      "Makharij"
+    ],
+    "interests": [
+      "Tafsir"
+    ]
+  },
+  {
+    "student_id": 3,
+    "full_name": "Mohamed Rahmani",
+    "email": "mohamed.rahmani@example.com",
+    "phone": "0551000003",
+    "address": "Bab Ezzouar",
+    "join_date": "2025-02-01",
+    "groupe": null,
+    "subscription_status": "Paid",
+    "skills": [
+      "Hifz",
+      "Tajwid"
+    ],
+    "interests": [
+      "Memorisation"
+    ]
+  },
+  {
+    "student_id": 4,
+    "full_name": "Imane Kaci",
+    "email": "imane.kaci@example.com",
+    "phone": "0551000004",
+    "address": "Kouba",
+    "join_date": "2025-02-10",
+    "groupe": null,
+    "subscription_status": "Pending",
+    "skills": [
+      "Lecture"
+    ],
+    "interests": [
+      "Hadith"
+    ]
+  },
+  {
+    "student_id": 5,
+    "full_name": "Samir Djabbar",
+    "email": "samir.djabbar@example.com",
+    "phone": "0551000005",
+    "address": "Hydra",
+    "join_date": "2025-02-18",
+    "groupe": null,
+    "subscription_status": "Paid",
+    "skills": [
+      "Hifz"
+    ],
+    "interests": [
+      "Competition"
+    ]
+  },
+  {
+    "student_id": 6,
+    "full_name": "Karim Sid Ahmed",
+    "email": "karim.sidahmed@example.com",
+    "phone": "0551000006",
+    "address": "Blida",
+    "join_date": "2025-03-01",
+    "groupe": null,
+    "subscription_status": "Pending",
+    "skills": [
+      "Tajwid"
+    ],
+    "interests": [
+      "Memorisation",
+      "Recitation"
+    ]
+  },
+  {
+    "student_id": 7,
+    "full_name": "Nadia Boukli",
+    "email": "nadia.boukli@example.com",
+    "phone": "0551000007",
+    "address": "Bouira",
+    "join_date": "2025-03-05",
+    "groupe": null,
+    "subscription_status": "Paid",
+    "skills": [
+      "Makharij"
+    ],
+    "interests": [
+      "Tafsir",
+      "Hadith"
+    ]
+  },
+  {
+    "student_id": 8,
+    "full_name": "Amina Cherif",
+    "email": "amina.cherif@example.com",
+    "phone": "0551000008",
+    "address": "Tizi Ouzou",
+    "join_date": "2025-03-12",
+    "groupe": null,
+    "subscription_status": "Pending",
+    "skills": [
+      "Lecture"
+    ],
+    "interests": [
+      "Arabic language"
+    ]
+  },
+  {
+    "student_id": 10,
+    "full_name": "Soufiane Latreche",
+    "email": "soufiane.latreche@example.com",
+    "phone": "0551000010",
+    "address": "Constantine",
+    "join_date": "2025-03-25",
+    "groupe": null,
+    "subscription_status": "Pending",
+    "skills": [
+      "Tajwid"
+    ],
+    "interests": [
+      "Memorisation"
+    ]
+  },
+  {
+    "student_id": 11,
+    "full_name": "Rania Mansour",
+    "email": "rania.mansour@example.com",
+    "phone": "0551000011",
+    "address": "Setif",
+    "join_date": "2025-04-01",
+    "groupe": null,
+    "subscription_status": "Paid",
+    "skills": [
+      "Makharij",
+      "Lecture"
+    ],
+    "interests": [
+      "Hadith",
+      "Arabic language"
+    ]
+  },
+  {
+    "student_id": 12,
+    "full_name": "Yacine Zerari",
+    "email": "yacine.zerari@example.com",
+    "phone": "0551000012",
+    "address": "Alger Centre",
+    "join_date": "2025-04-05",
+    "groupe": null,
+    "subscription_status": "Pending",
+    "skills": [
+      "Hifz"
+    ],
+    "interests": [
+      "Memorisation",
+      "Tafsir"
+    ]
+  },
+  {
+    "teacher_id": 1,
+    "full_name": "Ustadh Omar",
+    "email": "omar.teacher@example.com",
+    "phone": "0661000001",
+    "address": "Algiers",
+    "join_date": "2024-09-01",
+    "skills": [
+      "Tajwid",
+      "Tafsir"
+    ],
+    "interests": [
+      "Coaching",
+      "Competitions"
+    ]
+  },
+  {
+    "teacher_id": 2,
+    "full_name": "Ustadh Ahmed",
+    "email": "ahmed.teacher@example.com",
+    "phone": "0661000002",
+    "address": "Blida",
+    "join_date": "2024-09-10",
+    "skills": [
+      "Hifz",
+      "Hadith"
+    ],
+    "interests": [
+      "Supervision"
+    ]
+  },
+  {
+    "teacher_id": 3,
+    "full_name": "Ustadha Aicha",
+    "email": "aicha.teacher@example.com",
+    "phone": "0661000003",
+    "address": "Bouira",
+    "join_date": "2024-10-01",
+    "skills": [
+      "Makharij",
+      "Arabic language"
+    ],
+    "interests": [
+      "Beginners groups"
+    ]
+  },
+  {
+    "student_id": 13,
+    "full_name": "YOUNES DABOUZ",
+    "email": "Younesdabouz74@gmail.com",
+    "phone": "0659626276",
+    "address": "Bouira",
+    "join_date": "2025-11-18",
+    "groupe": null,
+    "subscription_status": "Paid",
+    "skills": [
+      "Tafsir"
+    ],
+    "interests": []
+  },
+  {
+    "student_id": 14,
+    "full_name": "Bourou Mohamed Lamine",
+    "email": "bouroumohamedlamine@gmail.com",
+    "phone": "0699110289",
+    "address": "bouira",
+    "join_date": "2005-02-11",
+    "groupe": null,
+    "subscription_status": "paid",
+    "skills": [
+      "tajwid"
+    ],
+    "interests": [
+      "hadith"
+    ]
+  },
+  {
+    "student_id": 15,
+    "full_name": "mohamed",
+    "email": "boun@gmail.com",
+    "phone": "0699110266",
+    "address": "242 log",
+    "join_date": "2025-11-04",
+    "groupe": null,
+    "subscription_status": "paid",
+    "skills": [
+      "Hifz"
+    ],
+    "interests": [
+      "Tfasir"
+    ]
+  },
+  {
+    "student_id": 16,
+    "full_name": "vfx",
+    "email": "",
+    "phone": "",
+    "address": "",
+    "join_date": "",
+    "groupe": null,
+    "subscription_status": "Pending",
+    "skills": [],
+    "interests": []
+  },
+  {
+    "student_id": 17,
+    "full_name": "hfh",
+    "email": "",
+    "phone": "",
+    "address": "",
+    "join_date": "",
+    "groupe": null,
+    "subscription_status": "Pending",
+    "skills": [],
+    "interests": []
+  },
+  {
+    "student_id": 18,
+    "full_name": "gfgh",
+    "email": "",
+    "phone": "",
+    "address": "",
+    "join_date": "",
+    "groupe": null,
+    "subscription_status": "Pending",
+    "skills": [],
+    "interests": []
+  },
+  {
+    "teacher_id": 4,
+    "full_name": "ustadh laymoun",
+    "email": "bou@gmail.com",
+    "phone": "0655441123",
+    "address": "alger",
+    "join_date": "2022-12-31",
+    "skills": [
+      "Tajwid"
+    ],
+    "interests": [
+      "Goat"
+    ]
+  },
+  {
+    "student_id": 19,
+    "full_name": "tttt",
+    "email": "",
+    "phone": "",
+    "address": "",
+    "join_date": "",
+    "groupe": null,
+    "subscription_status": "Pending",
+    "skills": [],
+    "interests": []
+  },
+  {
+    "teacher_id": 5,
+    "full_name": "Usdath younes",
+    "email": "you@gmail.com",
+    "phone": "0633221122",
+    "address": "alger",
+    "join_date": "2025-11-28",
+    "skills": [
+      "Tajwid"
+    ],
+    "interests": [
+      "messi"
+    ]
+  },
+  {
+    "student_id": 20,
+    "full_name": "eee",
+    "email": "",
+    "phone": "",
+    "address": "",
+    "join_date": "",
+    "groupe": null,
+    "subscription_status": "pending",
+    "skills": [],
+    "interests": []
+  },
+  {
+    "student_id": 21,
+    "full_name": "mm",
+    "email": "",
+    "phone": "",
+    "address": "",
+    "join_date": "",
+    "groupe": null,
+    "subscription_status": "paid",
+    "skills": [],
+    "interests": []
+  },
+  {
+    "student_id": 22,
+    "full_name": "younes",
+    "email": "younes@gmail.com",
+    "phone": "0659626276",
+    "address": "tsts",
+    "join_date": "2022-2-11",
+    "groupe": null,
+    "subscription_status": "Paid",
+    "skills": [],
+    "interests": []
+  },
+  {
+    "teacher_id": 6,
+    "full_name": "younes",
+    "email": "daaaa@gmail.com",
+    "phone": "0562626262",
+    "address": "haha",
+    "join_date": "2024-2-11",
+    "skills": [],
+    "interests": []
+  }
+]

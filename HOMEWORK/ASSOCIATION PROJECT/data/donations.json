@@ -1,0 +1,26 @@
+[
+  {
+    "donor_name": "Karim Rahmani",
+    "source": "Student",
+    "amount": 5000,
+    "date": "2025-01-05",
+    "purpose": "Zakat",
+    "note": "Support for needy students"
+  },
+  {
+    "donor_name": "Local Association",
+    "source": "External",
+    "amount": 12000,
+    "date": "2025-02-10",
+    "purpose": "Library",
+    "note": "Books and materials"
+  },
+  {
+    "donor_name": "YOUNES DABOUZ",
+    "source": "STUDENT",
+    "amount": 50.0,
+    "date": "2025-11-18",
+    "purpose": "ZAKAT",
+    "note": "Books and materials "
+  }
+]

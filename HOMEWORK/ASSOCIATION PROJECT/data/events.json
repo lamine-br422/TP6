@@ -1,0 +1,87 @@
+[
+  {
+    "event_name": "Hifdh Circle",
+    "description": "Weekly memorisation circle for Juz Amma.",
+    "event_date": "2025-04-10",
+    "organizer_ids": [
+      1
+    ],
+    "participant_ids": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "event_name": "Ramadan Competition",
+    "description": "Quran recitation competition for all groups.",
+    "event_date": "2025-03-25",
+    "organizer_ids": [
+      1,
+      3
+    ],
+    "participant_ids": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      11
+    ]
+  },
+  {
+    "event_name": "[GROUP_LINK] Usdath younes -> Group 1",
+    "description": "Technical link between Usdath younes and group 1",
+    "event_date": "2025-11-28",
+    "organizer_ids": [
+      5
+    ],
+    "participant_ids": []
+  },
+  {
+    "event_name": "[GROUP_LINK] Usdath younes -> Group 2",
+    "description": "Technical link between Usdath younes and group 2",
+    "event_date": "2025-11-28",
+    "organizer_ids": [
+      5
+    ],
+    "participant_ids": []
+  },
+  {
+    "event_name": "[GROUP_LINK] ustadh laymoun -> Group 3",
+    "description": "Technical link between ustadh laymoun and group 3",
+    "event_date": "2025-11-28",
+    "organizer_ids": [
+      4
+    ],
+    "participant_ids": []
+  },
+  {
+    "event_name": "[GROUP_LINK] Ustadh Omar -> Group 5",
+    "description": "Technical link between Ustadh Omar and group 5",
+    "event_date": "2025-12-07",
+    "organizer_ids": [
+      1
+    ],
+    "participant_ids": []
+  },
+  {
+    "event_name": "[GROUP_LINK] ustadh laymoun -> Group 1",
+    "description": "Technical link between ustadh laymoun and group 1",
+    "event_date": "2025-12-09",
+    "organizer_ids": [
+      4
+    ],
+    "participant_ids": []
+  },
+  {
+    "event_name": "[GROUP_LINK] Ustadh Ahmed -> Group 6",
+    "description": "Technical link between Ustadh Ahmed and group 6",
+    "event_date": "2025-12-09",
+    "organizer_ids": [
+      2
+    ],
+    "participant_ids": []
+  }
+]
