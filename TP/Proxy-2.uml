@@ -1,0 +1,25 @@
+@startuml
+
+interface IServiceVisa {
+    + deposerDossier(dossier)
+}
+
+class ServiceAmbassade {
+    + deposerDossier(dossier)
+}
+
+class ProxyAgenceVisa {
+    - serviceReel : IServiceVisa
+    + deposerDossier(dossier)
+}
+
+class Demandeur {
+    + envoyerDemande()
+}
+
+Demandeur --> IServiceVisa : utilise
+IServiceVisa <|.. ServiceAmbassade
+IServiceVisa <|.. ProxyAgenceVisa
+ProxyAgenceVisa --> ServiceAmbassade : délègue
+
+@enduml
